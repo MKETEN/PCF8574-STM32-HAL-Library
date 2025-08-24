@@ -2,7 +2,6 @@
 
 A small, well‑documented driver for the **PCF8574** I²C GPIO expander using the **STM32 HAL**. The goal is to provide a clean, readable, and production‑friendly API with clear examples and comments.
 
-> **Why this driver?**
 > PCF8574 uses a *quasi‑bidirectional* pin model. That is often confusing at first. This driver hides the details with a **shadow byte** and a set of simple functions (`WritePin`, `ReadPin`, `TogglePin`, `Read/WritePort`, masks). You pass a 7‑bit address; the driver does the HAL‑expected shifting internally.
 
 
@@ -298,3 +297,4 @@ if (st != PCF8574_OK) {
 ## License
 
 This project is released under the **MIT License**. See `LICENSE` for details.
+
